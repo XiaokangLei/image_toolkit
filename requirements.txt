@@ -1,0 +1,2 @@
+# word_extract_img-Method2
+docx==0.2.4
