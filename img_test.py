@@ -5,10 +5,11 @@ Author: Xiaokang Lei
 email: lxk201808@163.com
 Date: 2022-11-22 11:43:33
 LastEditors: Xiaokang Lei
-LastEditTime: 2022-11-23 11:43:24
+LastEditTime: 2022-11-23 15:23:34
 '''
 
 from utils.remove_same_file import find_by_md5, find_and_remove_repeat
+from utils.rename_img import rename
 from utils.word_extract_img import word2img
 from utils.util import get_file_list
 
@@ -40,8 +41,16 @@ def remove_same_img_test():
     # find_and_remove_repeat(img_dir, algorithm)
 
 
+def rename_img():
+    img_dir = './output/word'
+    index = 0
+    rename(img_dir, index)
+
+
 if __name__ == '__main__':
     # Test Word Extract Images
     # word_extract_img_test()
     # Test Remove Same Images
-    remove_same_img_test()
+    # remove_same_img_test()
+    # Test Rename Images
+    rename_img()
