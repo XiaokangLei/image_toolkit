@@ -1,2 +1,4 @@
 # word_extract_img-Method2
 docx==0.2.4
+# hexdigest
+rich==12.6.0

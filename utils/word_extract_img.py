@@ -5,7 +5,7 @@ Author: Xiaokang Lei
 email: lxk201808@163.com
 Date: 2022-11-22 11:44:35
 LastEditors: Xiaokang Lei
-LastEditTime: 2022-11-22 12:12:11
+LastEditTime: 2022-11-23 11:29:04
 '''
 
 import zipfile
@@ -53,7 +53,6 @@ def word2img(word_path, result_path):
     return (os.path.join(result_path, pic) for pic in os.listdir(result_path))
 
 
-
 def word2img2(word_path, result_path):
     """Extract images from word file
 
@@ -82,6 +81,7 @@ def word2img2(word_path, result_path):
             img_name = f'{new_name}_{img_name}'
             with open(f'{result_path}/{img_name}', "wb") as f:
                 f.write(rel.target_part.blob)
+
 
 if __name__ == '__main__':
     # path of word file
