@@ -5,13 +5,13 @@ Author: Xiaokang Lei
 email: lxk201808@163.com
 Date: 2022-11-22 12:27:38
 LastEditors: Xiaokang Lei
-LastEditTime: 2022-11-22 12:36:25
+LastEditTime: 2022-11-25 13:06:22
 '''
 
 import os
 
 
-def get_file_list(dir, filelist=[], ext=None):
+def get_file_list(dir: str, filelist=[], ext=None):
     """get files from dir
 
     Args:

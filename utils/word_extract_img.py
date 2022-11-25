@@ -5,7 +5,7 @@ Author: Xiaokang Lei
 email: lxk201808@163.com
 Date: 2022-11-22 11:44:35
 LastEditors: Xiaokang Lei
-LastEditTime: 2022-11-23 11:29:04
+LastEditTime: 2022-11-25 13:05:48
 '''
 
 import zipfile
@@ -13,7 +13,7 @@ import os
 import shutil
 
 
-def word2img(word_path, result_path):
+def word2img(word_path: str, result_path : str):
     """Extract images from word file
 
     Args:
@@ -53,7 +53,7 @@ def word2img(word_path, result_path):
     return (os.path.join(result_path, pic) for pic in os.listdir(result_path))
 
 
-def word2img2(word_path, result_path):
+def word2img2(word_path : str, result_path : str):
     """Extract images from word file
 
     Args:

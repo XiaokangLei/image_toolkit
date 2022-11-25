@@ -5,7 +5,7 @@ Author: Xiaokang Lei
 email: lxk201808@163.com
 Date: 2022-11-23 14:53:31
 LastEditors: Xiaokang Lei
-LastEditTime: 2022-11-23 15:21:36
+LastEditTime: 2022-11-25 13:06:15
 '''
 
 import os
@@ -16,7 +16,7 @@ from PIL import Image
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'JPG', 'PNG', 'bmp', 'jpeg', 'JPEG'])
 
 
-def allowed_file(filename):
+def allowed_file(filename : str):
     return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
 
